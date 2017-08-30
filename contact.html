@@ -24,8 +24,8 @@
 
   <body>
 
-    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">Business Casual</div>
-    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">Saving Lives</div>
+    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block"> FOR SAFE AND QUIET CITY</div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
@@ -51,7 +51,11 @@
               <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
             </li>
             <li class="nav-item px-lg-4">
+<<<<<<< HEAD
+              <a class="nav-link text-uppercase text-expanded" href="orders.html">Orders</a>
+=======
               <a class="nav-link text-uppercase text-expanded" href="register.html">Register</a>
+>>>>>>> 47de4f489cd49737ff16d39a4c226bf650f32962
             </li>
           </ul>
         </div>
@@ -68,7 +72,7 @@
         <hr class="divider">
         <div class="row">
           <div class="col-lg-8">
-            
+            <div id="map" style="height:400px"></div>
           </div>
           <div class="col-lg-4">
             <h5 class="mb-0">Phone:</h5>
@@ -130,6 +134,20 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script>
+      function initMap() {
+        var uluru = {lat:42.215258 , lng: 20.741474};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7jEGvISCZ9LlLz563qCpaoXkMqevE53c&callback=initMap"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 

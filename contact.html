@@ -50,6 +50,9 @@
             <li class="nav-item active px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
             </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="orders.html">Orders</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -60,39 +63,25 @@
       <div class="bg-faded p-4 my-4">
         <hr class="divider">
         <h2 class="text-center text-lg text-uppercase my-0">Contact
-          <strong>Business Casual</strong>
+          <strong>Our Municipality</strong>
         </h2>
         <hr class="divider">
         <div class="row">
-        
-        <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_l5-QiXW3g1zpjhxKLW1qcTGAtwSTPe0&callback=initMap">
-    </script>
+          <div class="col-lg-8">
+            <div id="map" style="height:400px"></div>
           </div>
           <div class="col-lg-4">
             <h5 class="mb-0">Phone:</h5>
-            <div class="mb-4">123.456.7890</div>
+            <div class="mb-4">+385 45 461 269</div>
             <h5 class="mb-0">Email:</h5>
             <div class="mb-4">
-              <a href="mailto:name@example.com">name@example.com</a>
+              <a href="mailto:name@example.com">info@prizreni-gov.org</a>
             </div>
             <h5 class="mb-0">Address:</h5>
             <div class="mb-4">
-              3481 Melrose Place
+              Edit Durham
               <br>
-              Beverly Hills, CA 90210
+               Prizren 20000
             </div>
           </div>
         </div>
@@ -141,6 +130,20 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script>
+      function initMap() {
+        var uluru = {lat:42.215258 , lng: 20.741474};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7jEGvISCZ9LlLz563qCpaoXkMqevE53c&callback=initMap"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 

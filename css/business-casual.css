@@ -58,9 +58,25 @@ h1 {
 }
 
 hr.divider {
-  border-color: #292b2c;
-  max-width: 250px;
+  float: right;
+
+ 
 }
+#play_button {
+    position:absolute;
+    transition: .5s ease;
+    top: 43%;
+    left: 40%;
+}
+div.tabela{
+  width:100%;
+  position:absolute;
+    transition: .5s ease;
+    top: 50%;
+    left: 0%;
+}
+
+   
 
 .map-container iframe {
   pointer-events: none;
